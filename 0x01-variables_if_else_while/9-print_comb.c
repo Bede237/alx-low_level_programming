@@ -12,8 +12,7 @@ int main(void)
 	{
 		if (a == 9)
 		{
-			putchar(a + '0');
-			break;
+			putchar(a + '0' + '\n');
 		} else
 		{
 			putchar(a + '0');
