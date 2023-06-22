@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _isalpha - checks if input is alphabet
- * @c - character to be checked
+ * @c: character to be checked
  * Return: 1 is for alphabet, 0 otherwise
  */
 int _isalpha(int c)
@@ -10,7 +10,7 @@ int _isalpha(int c)
 	{
 		return (1);
 	}
-	else 
+	else
 	{
 		return (0);
 	}
