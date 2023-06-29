@@ -1,6 +1,5 @@
 #include "main.h"
 #include <string.h>
-#include <stdio.h>
 /**
  * _strcat - concatinates 2 strings
  * @dest: first string
