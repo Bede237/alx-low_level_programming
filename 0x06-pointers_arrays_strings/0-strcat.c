@@ -1,14 +1,17 @@
 #include "main.h"
+#include <string.h>
 /**
  * _strcat - concatinates 2 strings
  * @dest: first string
  * @src: second sting for concatination
- * Return: dest
+ * Return: pointer to sting dest
  */
 char *_strcat(char *dest, char *src)
 {
-	int i = 0;
-	int j = 0;
+	int i, j;
+
+	i = 0;
+	j = 0;
 
 	while (dest[i] != '\0')
 	{
@@ -21,8 +24,5 @@ char *_strcat(char *dest, char *src)
 		j++;
 	}
 	dest[i] = '\0';
-	return (dest)
+	return (dest);
 }
-
-
-
