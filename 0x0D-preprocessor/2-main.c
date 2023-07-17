@@ -7,10 +7,10 @@
  */
 int main(void)
 {
-	if (__File__ == NULL)
+	if (__FILE__ == NULL)
 	{
 		return (0);
 	}
-	printf("%s\n", __File__);
+	printf("%s\n", __FILE__);
 	return (0);
 }
