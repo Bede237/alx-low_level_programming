@@ -17,6 +17,6 @@ struct dog
 /**
  * dog_s - new data type
  */
-typedef struct dog dog_s
+typedef struct dog dog_s;
 
 #endif
