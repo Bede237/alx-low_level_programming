@@ -5,6 +5,8 @@
  * @name: member type name
  * @age: member type age
  * @owner: member type owner
+ *
+ * Return: d (success) NULL (fail)
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
