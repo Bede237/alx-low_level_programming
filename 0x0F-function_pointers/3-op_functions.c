@@ -4,7 +4,7 @@
  * @a: parameter
  * @b: parameter
  *
- * return: a plus b
+ * return: sum of a and b
  */
 int op_add(int a, int b)
 {
@@ -16,7 +16,7 @@ int op_add(int a, int b)
  * @a: parameter
  * @b: parameter
  *
- * return: a minus b
+ * return: difference of a and b
  */
 int op_sub(int a, int b)
 {
@@ -28,7 +28,7 @@ int op_sub(int a, int b)
  * @a: parameter
  * @b: parameter
  *
- * return: a times b
+ * return: product of a and b
  */
 int op_mul(int a, int b)
 {
@@ -40,7 +40,7 @@ int op_mul(int a, int b)
  * @a: parameter
  * @b: parameter
  *
- * return: a divided b
+ * return: qoutient a and b
  */
 int op_div(int a, int b)
 {
@@ -52,7 +52,7 @@ int op_div(int a, int b)
  * @a: parameter
  * @b: parameter
  *
- * return: a mod b
+ * return: a % b
  */
 int op_mod(int a, int b)
 {
