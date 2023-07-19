@@ -9,13 +9,13 @@ int main(int argc, char *argv[])
 {
 	int a, b;
 
-	if (arc != 4)
+	if (argc != 4)
 	{
 		printf("Error\n");
 		return (98);
 	}
 
-	if (arv[2] != '/' &&  arv[2] != '-' && arv[2] != '+' && arv[2] != '%' && arv[2] != '*')
+	if (argv[2] != '/' &&  argv[2] != '-' && argv[2] != '+' && argv[2] != '%' && argv[2] != '*')
 	{
 		printf("Error\n");
 		return (99);
