@@ -3,6 +3,8 @@
 #include <stdlib.h>
 /**
  * main - Entry point
+ * @argc: argument count
+ * @argv: string pointer
  *
  * Return: 0 (success)
  */
