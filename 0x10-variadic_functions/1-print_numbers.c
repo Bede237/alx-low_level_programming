@@ -19,12 +19,12 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 			separator = "";
 		}
 
-		if (i = (n-1))
+		if (i == (n - 1))
 		{
 			printf("%d", i);
 		}
 		else
-                {
+		{
 			printf("%d%s", i, separator);
 		}
 	}
