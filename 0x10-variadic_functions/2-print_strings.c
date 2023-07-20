@@ -13,6 +13,8 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 	int i;
 
+	char *p;
+
 	va_start(ap, n);
 
 	for (i = 0; i < (int)n; i++)
@@ -22,13 +24,19 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			separator == "";
 		}
 
+		p = va_arg(ap, char*);
+
 		if (i == (((int)n) - 1))
 		{
-			printf("%s", va_arg(ap, char*));
+			printf("%s", p);
+		}
+		else if (p == NULL)
+		{
+			printf("nil");
 		}
 		else
 		{
-			prinf("%s%s", va_arg(ap, char*));
+			prinf("%s%s", p);
 		}
 
 	}
