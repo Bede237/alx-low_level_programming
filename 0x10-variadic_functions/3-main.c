@@ -7,6 +7,6 @@
  */
 int main(void)
 {
-	print_all("ceisf", 'B', 3, "stSchool", 7.68);
+	print_all("ceisfgghr", 'B', 3, "", "stSchool", 7.68,"" );
 	return (0);
 }
