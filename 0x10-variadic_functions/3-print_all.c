@@ -38,7 +38,7 @@ void print_all(const char * const format, ...)
 					printf("%s", p);
 					break;
 				case 'f':
-					prinf("%f", va_arg(ap, double));
+					printf("%f", va_arg(ap, double));
 					break;
 				default:
 					printf("\b\b");
