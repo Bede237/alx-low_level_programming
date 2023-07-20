@@ -36,7 +36,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		}
 		else
 		{
-			prinf("%s%s", p);
+			prinf("%s%s", p, separator);
 		}
 
 	}
