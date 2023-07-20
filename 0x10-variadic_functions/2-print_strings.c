@@ -21,7 +21,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 		if (separator == NULL)
 		{
-			separator == "";
+			separator = "";
 		}
 
 		p = va_arg(ap, char*);
@@ -32,11 +32,11 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		}
 		else if (p == NULL)
 		{
-			printf("nil");
+			printf("(nil)");
 		}
 		else
 		{
-			prinf("%s%s", p, separator);
+			printf("%s%s", p, separator);
 		}
 
 	}
