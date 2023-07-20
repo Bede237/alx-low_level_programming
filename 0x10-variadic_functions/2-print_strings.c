@@ -26,13 +26,12 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 		p = va_arg(ap, char*);
 
+		if (p == NULL)
+			p = "(nil)";
+
 		if (i == (((int)n) - 1))
 		{
 			printf("%s", p);
-		}
-		else if (p == NULL)
-		{
-			printf("(nil)");
 		}
 		else
 		{
@@ -43,5 +42,5 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 	va_end(ap);
 
-	 printf("\n");
+	printf("\n");
 }
