@@ -29,7 +29,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
  * @p: main string
  * @s1: first string to be concatenated
  *
- * Returns: number of letters passed
+ * Return: number of letters passed
  */
 int concat_s1(char *p, char *s1)
 {
@@ -54,13 +54,13 @@ int concat_s1(char *p, char *s1)
  * @n: num of letters to be passed
  * @i: continuation of p
  *
- * Return: pointer p
+ * Return: p(success)
  */
 char *concat_s2(char *p, char *s2, unsigned int n, int i)
 {
 	int m = 0;
 	int j = 0;
-	
+
 	if (s2 == NULL)
 		s2 = '\0';
 
