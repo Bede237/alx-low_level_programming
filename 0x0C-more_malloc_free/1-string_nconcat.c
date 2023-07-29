@@ -12,7 +12,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *p;
 	int i;
 
-	p = malloc (sizeof(char *) + n);
+	p = malloc(sizeof(char *) + n);
 
 	if (p == NULL)
 		return (NULL);
@@ -24,6 +24,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	return (p);
 }
 
+/**
+ * concat_s1 - copies s1 to p
+ * @p: main string
+ * @s1: first string to be concatenated
+ *
+ * Returns: number of letters passed
+ */
 int concat_s1(char *p, char *s1)
 {
 	int i = 0;
@@ -40,20 +47,29 @@ int concat_s1(char *p, char *s1)
 	return (i);
 }
 
+/**
+ * concat_s2 - copies n letters from s2 to p
+ * @p: main string
+ * @s2: second string to be concatenated
+ * @n: num of letters to be passed
+ * @i: continuation of p
+ *
+ * Return: pointer p
+ */
 char *concat_s2(char *p, char *s2, unsigned int n, int i)
 {
 	int m = 0;
 	int j = 0;
-
-	 if (s2 == NULL)
-		 s2 = '\0';
+	
+	if (s2 == NULL)
+		s2 = '\0';
 
 	while (s2[m] != '\0')
 	{
 		m++;
 	}
 
-	if (n >= m)
+	if ((int)n >= m)
 	{
 		while (j <= m)
 		{
@@ -64,14 +80,14 @@ char *concat_s2(char *p, char *s2, unsigned int n, int i)
 	}
 	else
 	{
-		while (j < n)
+		while (j < (int)n)
 		{
 			p[i] = s2[j];
 			i++;
 			j++;
 		}
 		p[i] = '\0';
-	}	
-	
+	}
+
 	return (p);
 }
