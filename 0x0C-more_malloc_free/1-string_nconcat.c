@@ -17,12 +17,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (p == NULL)
 		return (NULL);
 
-	if (*s1 == "NULL")
-		s1 = '\0';
-
-	if (*s2 == "NULL")
-		s2 = '\0';
-
 	i = concat_s1(p, s1);
 
 	concat_s2(p, s2, n, i);
