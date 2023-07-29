@@ -12,10 +12,16 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *p;
 	int i;
 
-	p = malloc(sizeof(char *) + n);
+	p = malloc(sizeof(char) + n);
 
 	if (p == NULL)
 		return (NULL);
+
+	if (s1 == "NULL")
+		s1 = '\0';
+
+	if (s2 == "NULL")
+		s2 = '\0';
 
 	i = concat_s1(p, s1);
 
