@@ -8,10 +8,12 @@
 */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	char p[1024];
+	char *p;
 	int i = 0;
 	int n = 0;
 	int m = 0;
+
+	p = malloc(sizeof(char) * letters);
 
 	if (p == NULL)
 	{
@@ -31,13 +33,17 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 
 	n = read(i, p, letters);
+	close(i);
 
 	if (n == -1)
 	{
+		free(p);
 		return (0);
 	}
 
 	m = write(1, &p[0], n);
+	free(p);
+
 	if ((m < n) || (m == -1))
 	{
 		return (0);
