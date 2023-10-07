@@ -15,8 +15,8 @@ hash_table_t *hash_table_create(unsigned long int size)
 	new->size = size;
 	new->array = (hash_node_t **)calloc(new->size, sizeof(hash_node_t *));
 	if (!new->array)
-		return (NULL)
-	for(i = 0; i < new->size; i++)
+		return (NULL);
+	for (i = 0; i < new->size; i++)
 	{
 		new->array[i] = NULL;
 	}
